@@ -1,0 +1,20 @@
+#summary Simple usage of library on checking validity of tokens.
+#labels Featured
+
+= Checking The Token =
+
+This page gives the basic example about checking validity of token provided by client.
+
+{{{
+<?php
+include("SecureToken.php");
+$st = new SecureToken();
+if(isset($_POST['token']))
+{
+    if ($st->CheckToken(($_POST['token'])))
+        GoAhead();
+    else
+        die ("Token is not valid");
+}
+?>
+}}}
