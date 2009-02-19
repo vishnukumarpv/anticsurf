@@ -19,7 +19,7 @@ Database connection configurations must be done at SecureToken.php
 
 = Usage ==
 
-There are four _public functions at AntiCSurf. Three of them can be used for CSRF defenses and one for deleting the contents of table that currently holding token records.
+There are four _public_ functions at AntiCSurf. Three of them can be used for CSRF defenses and one for deleting the contents of table that currently holding token records.
 {{{
 1. function CheckToken($token,$seconds = 0,$uds=null)
 2. function GetToken($uds=null) 
@@ -29,11 +29,11 @@ There are four _public functions at AntiCSurf. Three of them can be used for CSR
 
 *1.CheckToken*
 
-This function accepts two default parameters named _$seconds and _$uds. The first one, $seconds, will be used for checking against timeout restrictions. If you don't specify a timeout restriction, it will use 0.
+This function accepts two default parameters named _$seconds and _$uds. The first one, _$seconds_, will be used for checking against timeout restrictions. If you don't specify a timeout restriction, it will use 0.
 
 *2.GetToken*
 
-This function is giving a token that can be used for CSRF defense. You can pass a unique number or something else for identifying user, or cookie, or don't pass anything. If you don't pass anything, it will use session id (_session_id).
+This function is giving a token that can be used for CSRF defense. You can pass a unique number or something else for identifying user, or cookie, or don't pass anything. If you don't pass anything, it will use session id (_session_id_).
 
 *3.WriteFormToken*
 
