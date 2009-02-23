@@ -16,15 +16,16 @@ for($i=0;$i<100000;$i++)
 }}}
 
 = Results =
-
+{{{
   Entropy = 7.548771 bits per byte.
 
-  Optimum compression would reduce the size
-  of this 200000 byte file by 5 percent.
+  Optimum compression would reduce the size of this 200000 byte file by 5 percent.
 
-  Chi square distribution for 200000 samples is 150006.14, and randomly
-  would exceed this value less than 0.01 percent of the times.
+  Chi square distribution for 200000 samples is 150006.14, and randomly would exceed this value less than 0.01 percent of the times.
 
   Arithmetic mean value of data bytes is 127.2513 (127.5 = random).
+  
   Monte Carlo value for Pi is 3.149911499 (error 0.26 percent).
+  
   Serial correlation coefficient is -0.000192 (totally uncorrelated = 0.0).
+}}}
