@@ -16,6 +16,7 @@ for($i=0;$i<100000;$i++)
 }}}
 
 = Results =
+[http://anticsurf.googlecode.com/files/a.jpg]
 {{{
   Entropy = 7.548771 bits per byte.
 
